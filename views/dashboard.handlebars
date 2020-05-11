@@ -1,0 +1,65 @@
+<div id="home">
+  <div id='backgroundWrapper'>
+  <div id='dashBoard' class='container rounded shadow'>
+    <div id='sideBar'>
+      <h4 class='h4 text-center'>Search for your favorite book!</h4>
+      <input id='userSearch' />
+      <div id='searchCats' class="btn-group btn-group-sm btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="authorCheckBox" data-searchName='author' autocomplete="off" checked> Author
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="titleCheckBox" data-searchName='title' autocomplete="off"> Title
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="isbnCheckBox" data-searchName='isbn' autocomplete="off"> ISBN
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="genreCheckBox" data-searchName='genre' autocomplete="off"> Genre
+        </label>
+      </div>
+      <button id='searchBtn' type="button" class='btn btn-primary'>Search</button>
+
+    <div id='bottomSection'>
+      <button id='addBookBtn' type="button" data-target="#addBook" data-toggle="modal" class='btn btn-primary'>Add Book</button>
+    </div>
+      
+    </div>
+
+    
+    
+    <div id='content'>
+      <div>
+        <div id='userTitle' class='text-center'>
+          <h3 class='h3'>Welcome {{userName}}</h3>
+        </div>
+      </div>
+        <div>
+          <div id='bookContainer' class='rounded text-center'>
+
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+</div>
+
+<div class="modal fade" id="addBook" tabindex="-1" role="dialog" aria-labelledby="addBookModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addBookLabel">Add a book</h5>
+                <button type="button" class="close" data-dismiss="modal" data-target='addBookModal' aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                
+            </div>
+            </div>
+        </div>
+    </div>
+<script src="/js/dashboard.js"></script>
+
+

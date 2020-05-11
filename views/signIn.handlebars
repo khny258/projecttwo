@@ -1,0 +1,28 @@
+<div id="home">
+  <div id='backgroundWrapper'>
+  <div id='loginDiv' class='container rounded shadow'>
+
+<h4>Log In</h4>
+
+<div>
+<form method="POST" action="/signin">
+  <div class="form-group">
+    <label for="userName">UserName:</label>
+    <input type="input" class="form-control" id="userNameLogIn" name="username" placeholder="Enter username">
+  </div>
+  <div class="form-group">
+    <label for="userPassword">Password:</label>
+    <input type="password" class="form-control" id="userLoginPassword" name="password" placeholder="Password">
+  </div>
+  <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<a href="/signup"><p>Don't have an account? Sign up here.</p></a>
+</div>
+
+</div>
+</div>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
